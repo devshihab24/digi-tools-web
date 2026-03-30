@@ -1,6 +1,7 @@
 
 import './App.css'
 import DigitalTools from './Components/DigitalTools/DigitalTools'
+import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 import SimplePricing from './Components/SimplePricing/SimplePricing'
 import StartedSteps from './Components/StartedSteps/StartedSteps'
@@ -17,6 +18,7 @@ function App() {
       <DigitalTools></DigitalTools>
       <StartedSteps></StartedSteps>
       <SimplePricing></SimplePricing>
+      <Footer></Footer>
     </>
   )
 }

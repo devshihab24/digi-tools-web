@@ -35,7 +35,7 @@ const StartedSteps = () => {
             Start using premium digital tools in minutes, not hours.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {data.map((item) => (
             <StartedStepCard item={item} key={item.index}></StartedStepCard>
           ))}

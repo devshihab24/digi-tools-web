@@ -6,46 +6,46 @@ const SimplePricing = () => {
     {
       id: 1,
       cardType: "Starter",
-      shortDescription: "Best for individuals getting started.",
-      pricingPerMonth: "$9",
+      shortDescription: "Perfect for getting started",
+      pricingPerMonth: "$0",
       popular: false,
       advantages: [
-        "Access to basic features",
-        "Single user support",
-        "Limited storage (5GB)",
-        "Email support",
+        "Access to 10 free tools",
+        "Basic templates",
+        "Community support",
+        "1 project per month",
       ],
       purchaseTypeBtn: "Get Started",
     },
     {
       id: 2,
       cardType: "Pro",
-      shortDescription: "Perfect for growing teams.",
+      shortDescription: "Best for professionals",
       popular: "Most Popular",
       pricingPerMonth: "$29",
       advantages: [
-        "All Starter features",
+        "Access to all premium tools",
         "Up to 5 users",
-        "Increased storage (50GB)",
-        "Priority email support",
-        "Team collaboration tools",
-        "Basic analytics dashboard",
+        "Unlimited templates",
+        "Priority support",
+        "Unlimited projects",
+        "Advanced analytics",
       ],
-      purchaseTypeBtn: "Upgrade to Pro",
+      purchaseTypeBtn: "Start Pro Trial",
     },
     {
       id: 3,
       cardType: "Enterprise",
-      shortDescription: "Advanced solution for large organizations.",
+      shortDescription: "For teams and businesses",
       pricingPerMonth: "$99",
       popular: false,
       advantages: [
-        "All Pro features",
-        "Unlimited users",
-        "Unlimited storage",
-        "24/7 dedicated support",
-        "Advanced security features",
-        "Custom integrations support",
+        "Everything in Pro",
+        "Team collaboration",
+        "Custom integrations",
+        "Dedicated support",
+        "SLA guarantee",
+        "Custom branding",
       ],
       purchaseTypeBtn: "Contact Sales",
     },
@@ -60,7 +60,7 @@ const SimplePricing = () => {
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {
             pricingPlans.map(plan=><PricingCard plan={plan} key={plan.id}></PricingCard>)
         }

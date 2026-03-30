@@ -1,0 +1,119 @@
+[
+  {
+    "id": 1,
+    "img": "/images/ai-writing-pro.png",
+    "badge": "AI Tool",
+    "title": "AI Writing Pro",
+    "shortDescription": "Advanced AI-powered content writing assistant.",
+    "pricingPerMonth": "$19",
+    "advantages": [
+      "Generate high-quality articles",
+      "SEO optimization tools",
+      "Multi-language support"
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/images/stock-assets.png",
+    "badge": "Assets",
+    "title": "Premium Stock Assets",
+    "shortDescription": "Unlimited access to high-quality stock resources.",
+    "pricingPerMonth": "$15",
+    "advantages": [
+      "HD photos & videos",
+      "Commercial license included",
+      "Weekly new uploads"
+    ]
+  },
+  {
+    "id": 3,
+    "img": "/images/design-pack.png",
+    "badge": "Design",
+    "title": "Design Templates Pack",
+    "shortDescription": "Ready-to-use templates for fast design work.",
+    "pricingPerMonth": "$12",
+    "advantages": [
+      "Figma & PSD templates",
+      "UI/UX ready designs",
+      "Easy customization"
+    ]
+  },
+  {
+    "id": 4,
+    "img": "/images/video-editor.png",
+    "badge": "Video",
+    "title": "AI Video Editor",
+    "shortDescription": "Create and edit videos with AI assistance.",
+    "pricingPerMonth": "$25",
+    "advantages": [
+      "Auto video generation",
+      "Subtitle & voice sync",
+      "Drag & drop editor"
+    ]
+  },
+  {
+    "id": 5,
+    "img": "/images/marketing-ai.png",
+    "badge": "Marketing",
+    "title": "AI Marketing Suite",
+    "shortDescription": "All-in-one AI tools for digital marketing.",
+    "pricingPerMonth": "$29",
+    "advantages": [
+      "Ad copy generation",
+      "Campaign analytics",
+      "Email automation"
+    ]
+  },
+  {
+    "id": 6,
+    "img": "/images/code-assistant.png",
+    "badge": "Developer",
+    "title": "AI Code Assistant",
+    "shortDescription": "Boost coding speed with AI suggestions.",
+    "pricingPerMonth": "$20",
+    "advantages": [
+      "Auto code completion",
+      "Bug detection",
+      "Multi-language support"
+    ]
+  },
+  {
+    "id": 7,
+    "img": "/images/social-media-kit.png",
+    "badge": "Social",
+    "title": "Social Media Kit",
+    "shortDescription": "Design and manage social media content easily.",
+    "pricingPerMonth": "$10",
+    "advantages": [
+      "Post templates",
+      "Content calendar",
+      "Auto scheduling"
+    ]
+  },
+  {
+    "id": 8,
+    "img": "/images/seo-toolkit.png",
+    "badge": "SEO",
+    "title": "SEO Toolkit Pro",
+    "shortDescription": "Optimize your website for search engines.",
+    "pricingPerMonth": "$18",
+    "advantages": [
+      "Keyword research",
+      "Site audit tools",
+      "Rank tracking"
+    ]
+  },
+  {
+    "id": 9,
+    "img": "/images/branding-kit.png",
+    "badge": "Branding",
+    "title": "Branding Kit",
+    "shortDescription": "Create a complete brand identity quickly.",
+    "pricingPerMonth": "$22",
+    "advantages": [
+      "Logo maker",
+      "Brand guidelines",
+      "Color & font presets"
+    ]
+  }
+]
