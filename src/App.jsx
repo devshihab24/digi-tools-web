@@ -22,7 +22,7 @@ function App() {
       <Header></Header>
       <Supercharge></Supercharge>
       <Stat></Stat>
-      <Suspense fallback={<p>Data Loading...</p>}><DigitalTools fetchedData={fetchedData}></DigitalTools></Suspense>
+      <Suspense fallback={<div className='h-screen flex justify-center items-center'><span className="loading loading-dots loading-xl"></span></div>}><DigitalTools fetchedData={fetchedData}></DigitalTools></Suspense>
       <StartedSteps></StartedSteps>
       <SimplePricing></SimplePricing>
       <Footer></Footer>
