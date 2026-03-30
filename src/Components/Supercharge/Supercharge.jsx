@@ -1,4 +1,5 @@
 import bannerImg from "../../assets/banner.png";
+import playIcon from "../../assets/Play.png"
 
 const Supercharge = () => {
   return (
@@ -16,11 +17,11 @@ const Supercharge = () => {
         </p>
         <div className="flex gap-10 ">
           <button className="common-btn">Explore Products</button>
-          <button className=" border-2 border-[#4F39F7] px-5 py-3 rounded-full text-[#4F39F7] bg-white cursor-pointer" style={{boxShadow:"8px 8px 16px rgba(0,0,0,0.3)"}}>Watch Demo</button>
+          <button className=" border-2 border-[#4F39F7] px-5 py-3 rounded-full text-[#4F39F7] bg-white cursor-pointer flex gap-1 " style={{boxShadow:"8px 8px 16px rgba(0,0,0,0.3)"}}> <img src={playIcon} className="h-5" alt="" /> Watch Demo</button>
         </div>
       </div>
       <div className=" ">
-        <img src={bannerImg} className="w-150 md:h-[600px]" alt="" />
+        <img src={bannerImg} className="w-150 md:h-150" alt="" />
       </div>
     </div>
   );
