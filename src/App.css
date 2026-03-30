@@ -1,40 +1,54 @@
-.common-btn{
-    padding: 12px 20px;
-    background: linear-gradient(90deg, #4F39F7, #655479);
-    color: white;
-    border-radius: 999px;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow:  8px 8px 16px rgba(0,0,0,0.4);
-    border: 2px solid transparent;
+.common-btn {
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #4f39f7, #655479);
+  color: white;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in;
 }
-.pricing-btn{
-    padding: 12px 20px;
-    background: white;
-    color: rgba(105, 15, 249, 0.877);
-    border-radius: 999px;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow:  8px 8px 16px rgba(0,0,0,0.4);
-    border: 2px solid transparent;
+.inactive-btn {
+  padding: 12px 20px;
+  background: white;
+  color: rgba(105, 15, 249, 0.877);
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(105, 15, 249, 0.877);
+  transition: all 0.2s ease-in;
 }
-.new-badge::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translate(-6%, -50%);
-    left: 6%;
-    padding: 7px;
-    border-radius: 50%;
-    background: linear-gradient(90deg, #4F39F7, #655479);
+.pricing-btn {
+  padding: 12px 20px;
+  background: white;
+  color: rgba(105, 15, 249, 0.877);
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+  border: 2px solid transparent;
+    transition: all 0.2s ease-in;
+
 }
-p{
-    color: #627382;
+.new-badge::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(-6%, -50%);
+  left: 6%;
+  padding: 7px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #4f39f7, #655479);
 }
-.card-shadow{
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+p {
+  color: #627382;
+}
+.card-shadow {
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-.pricing{
-    color: white;
+.pricing {
+  color: white;
 }

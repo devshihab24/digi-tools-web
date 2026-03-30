@@ -24,7 +24,7 @@ const PricingCard = ({ plan }) => {
       </p>
       <ul>
         {
-            advantages.map(text => <li className={`flex items-center gap-1 ${popular ? 'text-white' : 'text-gray-600'}`}><CircleCheck className={`${popular? 'text-white' : 'text-green-500'}`} size={16}></CircleCheck>{text}</li>)
+            advantages.map((text, idx) => <li key={idx} className={`flex items-center gap-1 ${popular ? 'text-white' : 'text-gray-600'}`}><CircleCheck className={`${popular? 'text-white' : 'text-green-500'}`} size={16}></CircleCheck>{text}</li>)
         }
       </ul>
       <button className={`w-full ${popular ? 'pricing-btn' : 'common-btn'} `}>{purchaseTypeBtn}</button>

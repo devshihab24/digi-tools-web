@@ -1,16 +1,41 @@
-import React from 'react';
+import { use, useState } from "react";
+import Products from "./Products/Products";
+import Carts from "./Carts/Carts";
 
-const DigitalTools = () => {
-    return (
-        <div className='h-screen flex flex-col justify-center items-center'>
-            <h2>Premium Digital Tools</h2>
-            <p>Choose from our curated collection of premium digital products designed <br />to boost your productivity and creativity.</p>
-            <div className='flex gap-10'>
-                <button className='common-btn'>Products</button>
-                <button>Cart (2)</button>
-            </div>
-        </div>
-    );
+const DigitalTools = ({ fetchedData }) => {
+  const [activeBtn, setActiveBtn] = useState("products");
+
+  const toolsData = use(fetchedData);
+  return (
+    <div className="w-[95%] md:w-[80%] mx-auto my-10">
+      <div className="flex flex-col justify-center items-center text-center py-10 gap-3">
+        <h2 className="text-3xl md:text-5xl font-black">Premium Digital Tools</h2>
+        <p>
+          Choose from our curated collection of premium digital products
+          designed <br />
+          to boost your productivity and creativity.
+        </p>
+      </div>
+      <div className="flex justify-center items-center gap-10 pb-10">
+        <button
+          onClick={() => setActiveBtn("products")}
+          className={`${activeBtn == "products" ? "common-btn" : "inactive-btn"}`}
+        >
+          Products
+        </button>
+        <button
+          onClick={() => setActiveBtn("cart")}
+          className={`${activeBtn == "cart" ? "common-btn" : "inactive-btn"}`}
+        >
+          Cart (2)
+        </button>
+      </div>
+      <div>
+        {activeBtn == "products" && <Products toolsData={toolsData}></Products>}
+        {activeBtn == "cart" && <Carts></Carts>}
+      </div>
+    </div>
+  );
 };
 
 export default DigitalTools;

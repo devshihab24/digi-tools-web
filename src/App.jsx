@@ -1,4 +1,5 @@
 
+import { Suspense } from 'react'
 import './App.css'
 import DigitalTools from './Components/DigitalTools/DigitalTools'
 import Footer from './Components/Footer/Footer'
@@ -8,14 +9,20 @@ import StartedSteps from './Components/StartedSteps/StartedSteps'
 import Stat from './Components/Stat/Stat'
 import Supercharge from './Components/Supercharge/Supercharge'
 
-function App() {
 
+const fetchPremiumTools = async() =>{
+  const res = await fetch("/premium-tools.json")
+  return res.json()
+}
+
+function App() {
+  const fetchedData = fetchPremiumTools()
   return (
     <>
       <Header></Header>
       <Supercharge></Supercharge>
       <Stat></Stat>
-      <DigitalTools></DigitalTools>
+      <Suspense fallback={<p>Data Loading...</p>}><DigitalTools fetchedData={fetchedData}></DigitalTools></Suspense>
       <StartedSteps></StartedSteps>
       <SimplePricing></SimplePricing>
       <Footer></Footer>
