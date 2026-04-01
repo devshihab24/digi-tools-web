@@ -15,7 +15,7 @@ const Supercharge = () => {
           software—all in one place. Start creating faster today. Explore
           Products
         </p>
-        <div className="flex justify-center md:justify-start gap-10 ">
+        <div className="flex justify-center md:justify-start gap-6 md:gap-10 ">
           <button className="common-btn">Explore Products</button>
           <button className=" border-2 border-[#4F39F7] px-5 py-3 rounded-full text-[#4F39F7] bg-white cursor-pointer flex gap-1 " style={{boxShadow:"8px 8px 16px rgba(0,0,0,0.3)"}}> <img src={playIcon} className="h-5" alt="" /> Watch Demo</button>
         </div>

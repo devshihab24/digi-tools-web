@@ -1,15 +1,22 @@
-import { use, useState } from "react";
+import { useState } from "react";
 import Products from "./Products/Products";
 import Carts from "./Carts/Carts";
 
-const DigitalTools = ({ fetchedData }) => {
+const DigitalTools = ({
+  allProducts,
+  cartItem,
+  setCartItem,
+  setPriceCount,
+  priceCount,
+}) => {
   const [activeBtn, setActiveBtn] = useState("products");
-
-  const toolsData = use(fetchedData);
+  console.log(priceCount);
   return (
     <div className="w-[95%] md:w-[80%] mx-auto my-10">
       <div className="flex flex-col justify-center items-center text-center py-10 gap-3">
-        <h2 className="text-3xl md:text-5xl font-black">Premium Digital Tools</h2>
+        <h2 className="text-3xl md:text-5xl font-black">
+          Premium Digital Tools
+        </h2>
         <p>
           Choose from our curated collection of premium digital products
           designed <br />
@@ -27,12 +34,27 @@ const DigitalTools = ({ fetchedData }) => {
           onClick={() => setActiveBtn("cart")}
           className={`${activeBtn == "cart" ? "common-btn" : "inactive-btn"}`}
         >
-          Cart (2)
+          Cart ({cartItem.length})
         </button>
       </div>
       <div>
-        {activeBtn == "products" && <Products toolsData={toolsData}></Products>}
-        {activeBtn == "cart" && <Carts></Carts>}
+        {activeBtn == "products" && (
+          <Products
+            cartItem={cartItem}
+            setCartItem={setCartItem}
+            allProducts={allProducts}
+            setPriceCount={setPriceCount}
+            priceCount={priceCount}
+          ></Products>
+        )}
+        {activeBtn == "cart" && (
+          <Carts
+            setCartItem={setCartItem}
+            cartItem={cartItem}
+            setPriceCount={setPriceCount}
+            priceCount={priceCount}
+          ></Carts>
+        )}
       </div>
     </div>
   );

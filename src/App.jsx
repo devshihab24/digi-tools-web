@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import DigitalTools from './Components/DigitalTools/DigitalTools'
 import Footer from './Components/Footer/Footer'
@@ -10,19 +10,21 @@ import Stat from './Components/Stat/Stat'
 import Supercharge from './Components/Supercharge/Supercharge'
 
 
-const fetchPremiumTools = async() =>{
-  const res = await fetch("/premium-tools.json")
-  return res.json()
-}
 
 function App() {
-  const fetchedData = fetchPremiumTools()
+  const [cartItem, setCartItem] = useState([])
+  const [allProducts, setAllProducts] = useState([])
+  const [priceCount, setPriceCount] =useState(0)
+  useEffect(()=>{
+    fetch("/premium-tools.json").then(res=>res.json()).then(data=>setAllProducts(data))
+  },[])
+  console.log(cartItem);
   return (
     <>
       <Header></Header>
       <Supercharge></Supercharge>
       <Stat></Stat>
-      <Suspense fallback={<div className='h-screen flex justify-center items-center'><span className="loading loading-dots loading-xl"></span></div>}><DigitalTools fetchedData={fetchedData}></DigitalTools></Suspense>
+      <DigitalTools priceCount={priceCount} setPriceCount={setPriceCount} cartItem={cartItem} setCartItem={setCartItem} allProducts={allProducts}></DigitalTools>
       <StartedSteps></StartedSteps>
       <SimplePricing></SimplePricing>
       <Footer></Footer>

@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "img": "https://i.ibb.co.com/p6p8R3LX/writing-2327400-1.png",
-    "badge": "Best Seller",
-    "title": "AI Writing Pro",
-    "shortDescription": "Advanced AI-powered content writing assistant.",
-    "pricingPerMonth": "$89",
-    "subscription": "One-Time",
-    "advantages": [
+    "icon": "https://i.ibb.co.com/p6p8R3LX/writing-2327400-1.png",
+    "tag": "Best Seller",
+    "name": "AI Writing Pro",
+    "description": "Advanced AI-powered content writing assistant.",
+    "price": "89",
+    "period": "One-Time",
+    "features": [
       "Generate high-quality articles",
       "SEO optimization tools",
       "Multi-language support"
@@ -15,13 +15,13 @@
   },
   {
     "id": 2,
-    "img": "https://i.ibb.co.com/GzczVgn/design-tool.png",
-    "badge": "Popular",
-    "title": "Premium Stock Assets",
-    "shortDescription": "Unlimited access to high-quality stock resources.",
-    "pricingPerMonth": "$99",
-    "subscription": "One-Time",
-    "advantages": [
+    "icon": "https://i.ibb.co.com/GzczVgn/design-tool.png",
+    "tag": "Popular",
+    "name": "Premium Stock Assets",
+    "description": "Unlimited access to high-quality stock resources.",
+    "price": "99",
+    "period": "One-Time",
+    "features": [
       "HD photos & videos",
       "Commercial license included",
       "Weekly new uploads"
@@ -29,13 +29,13 @@
   },
   {
     "id": 3,
-    "img": "https://i.ibb.co.com/cWV5XGK/operation.png",
-    "badge": "New",
-    "title": "Design Templates Pack",
-    "shortDescription": "Ready-to-use templates for fast design work.",
-    "pricingPerMonth": "$12",
-    "subscription": "Month",
-    "advantages": [
+    "icon": "https://i.ibb.co.com/SDYVZJ0F/camera-8775444-1.png",
+    "tag": "New",
+    "name": "Design Templates Pack",
+    "description": "Ready-to-use templates for fast design work.",
+    "price": "12",
+    "period": "Month",
+    "features": [
       "Figma & PSD templates",
       "UI/UX ready designs",
       "Easy customization"
@@ -43,13 +43,13 @@
   },
   {
     "id": 4,
-    "img": "https://i.ibb.co.com/Mxz1rtNX/portfolio.png",
-    "badge": "Popular",
-    "title": "AI Video Editor",
-    "shortDescription": "Create and edit videos with AI assistance.",
-    "pricingPerMonth": "$75",
-    "subscription": "One-Time",
-    "advantages": [
+    "icon": "https://i.ibb.co.com/Mxz1rtNX/portfolio.png",
+    "tag": "Popular",
+    "name": "AI Video Editor",
+    "description": "Create and edit videos with AI assistance.",
+    "price": "75",
+    "period": "One-Time",
+    "features": [
       "Auto video generation",
       "Subtitle & voice sync",
       "Drag & drop editor"
@@ -57,13 +57,13 @@
   },
   {
     "id": 5,
-    "img": "https://i.ibb.co.com/KxDGvV6K/social-media.png",
-    "badge": "New",
-    "title": "AI Marketing Suite",
-    "shortDescription": "All-in-one AI tools for digital marketing.",
-    "pricingPerMonth": "$29",
-    "subscription": "One-Time",
-    "advantages": [
+    "icon": "https://i.ibb.co.com/KxDGvV6K/social-media.png",
+    "tag": "New",
+    "name": "AI Marketing Suite",
+    "description": "All-in-one AI tools for digital marketing.",
+    "price": "29",
+    "period": "One-Time",
+    "features": [
       "Ad copy generation",
       "Campaign analytics",
       "Email automation"
@@ -71,13 +71,13 @@
   },
   {
     "id": 6,
-    "img": "https://i.ibb.co.com/GzczVgn/design-tool.png",
-    "badge": "Best Seller",
-    "title": "AI Code Assistant",
-    "shortDescription": "Boost coding speed with AI suggestions.",
-    "pricingPerMonth": "$20",
-    "subscription": "Month",
-    "advantages": [
+    "icon": "https://i.ibb.co.com/cWV5XGK/operation.png",
+    "tag": "Best Seller",
+    "name": "AI Code Assistant",
+    "description": "Boost coding speed with AI suggestions.",
+    "price": "20",
+    "period": "Month",
+    "features": [
       "Auto code completion",
       "Bug detection",
       "Multi-language support"

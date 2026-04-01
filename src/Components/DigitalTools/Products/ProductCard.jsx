@@ -1,41 +1,47 @@
 import { CheckCircle, CircleCheck } from "lucide-react";
-import React from "react";
 
-const ProductCard = ({ products }) => {
+const ProductCard = ({ product, setCartItem, cartItem,setPriceCount, priceCount }) => {
   const {
-    img,
-    advantages,
-    pricingPerMonth,
-    shortDescription,
-    title,
-    badge,
-    subscription,
-  } = products;
-  console.log(products);
+    icon,
+    features,
+    price,
+    description,
+    name,
+    tag,
+    period,
+  } = product;
+  // console.log(products);
+  const handleAddToCart = () =>{
+    const existingItem = cartItem.find(item=>item.id === product.id)
+    if(existingItem) return;
+    const newCartItem = (previous => [...previous, product])
+    setCartItem(newCartItem)
+    setPriceCount(priceCount + parseInt(price))
+  }
   return (
-    <div className="relative flex flex-col p-5 space-y-5 rounded-xl card-shadow">
+    <div className="relative flex flex-col p-5 space-y-5 rounded-xl card-shadow product-card">
       <div className="">
-        <img className="h-12" src={img} alt="" />
-        <div className={`absolute top-3 right-5 py-1 px-3 text-sm rounded-full ${badge =="Best Seller" && "bg-[#FEF3C6] text-[#BB4D00]"} ${badge == "Popular" && 'bg-[#E1E7FF] text-[#6f40fc]'} ${badge == "New" && 'bg-[#55ff9c94] text-[#0A883E]'}`}>{badge}</div>
+        <img className="h-12" src={icon} alt="" />
+        <div className={`absolute top-3 right-5 py-1 px-3 text-sm rounded-full ${tag =="Best Seller" && "bg-[#FEF3C6] text-[#BB4D00]"} ${tag == "Popular" && 'bg-[#E1E7FF] text-[#6f40fc]'} ${tag == "New" && 'bg-[#55ff9c94] text-[#0A883E]'}`}>{tag}</div>
       </div>
       <div>
-        <h3>{title}</h3>
-        <p>{shortDescription}</p>
+        <h3>{name}</h3>
+        <p>{description}</p>
       </div>
       <div>
         <p>
-          <span>{pricingPerMonth}</span>/{subscription}
+          <span>${price}</span>/{period}
         </p>
       </div>
       <ul>
-        {advantages.map((item, idx) => (
+        {features.map((item, idx) => (
           <li className="flex gap-1 justify-start items-center" key={idx}>
             <CheckCircle size={16} className="text-green-400"></CheckCircle>
             {item}
           </li>
         ))}
       </ul>
-      <button className="common-btn w-full mt-auto">Buy Now</button>
+      <button onClick={handleAddToCart} className="common-btn w-full mt-auto">Buy Now</button>
     </div>
   );
 };

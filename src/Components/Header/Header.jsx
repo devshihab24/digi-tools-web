@@ -67,7 +67,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end gap-4">
-          <ShoppingCart className="hover:cursor-pointer"></ShoppingCart>
+          <ShoppingCart className="hover:cursor-pointer shopping-cart"></ShoppingCart>
           <a className="hidden md:block hover:cursor-pointer font-semibold">Login</a>
           <button className="common-btn">Get Started</button>
         </div>
