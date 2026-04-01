@@ -1,12 +1,21 @@
-# React + Vite
+# DigiTools Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SH-Digitools is a versatile web-based platform that offers a collection of essential digital utility tools designed to simplify everyday tasks. Built with a modern and user-friendly interface, the site provides quick access to various functional tools, ensuring a seamless experience for users looking for efficiency and productivity in one place.
+<br>
 
-Currently, two official plugins are available:
+## Technologies Used
+- React.js
+- JavaScript (ES6+)
+- Lucide React
+- Tailwind CSS, DaisyUI
+- React-Toastify (NPM Package)
+- JSON (for product data)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 3 key features about DigiTools 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Fast & Responsive UI:** The website features a clean, modern, and responsive interface (built with React and Vite), ensuring that the tools are easy to navigate and work smoothly across both desktop and mobile devices.
+- **Instant Feedback with Notifications:** Integrated React Toast notifications give users real-time feedback on actions, making the experience feel polished and intuitive.
+- **Lightweight & Blazing Fast:** Powered by Vite under the hood, the site loads incredibly fast, ensuring a snappy experience from the first visit.
+
+[Visit DigiTools](https://sh-digitools.netlify.app/)
