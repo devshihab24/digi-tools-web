@@ -1,14 +1,17 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Carts = ({ cartItem, setCartItem, setPriceCount, priceCount }) => {
   const removeItemFromCart = (item) => {
     const filteredCart = cartItem.filter((product) => item.id !== product.id);
     setCartItem(filteredCart);
     setPriceCount(priceCount - parseInt(item.price));
+    toast.success("Item removed from cart successfully!")
   };
   const placeOrder = ()=>{
     setCartItem([])
     setPriceCount(0)
+    if(cartItem.length !==0) toast.success("Your order has been placed successfully!")
   }
   return (
     <div className="space-y-8">

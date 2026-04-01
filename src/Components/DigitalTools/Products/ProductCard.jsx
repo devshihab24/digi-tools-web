@@ -1,4 +1,5 @@
 import { CheckCircle, CircleCheck } from "lucide-react";
+import { toast } from "react-toastify";
 
 const ProductCard = ({ product, setCartItem, cartItem,setPriceCount, priceCount }) => {
   const {
@@ -17,6 +18,7 @@ const ProductCard = ({ product, setCartItem, cartItem,setPriceCount, priceCount 
     const newCartItem = (previous => [...previous, product])
     setCartItem(newCartItem)
     setPriceCount(priceCount + parseInt(price))
+    toast.success("Item added successfully!")
   }
   return (
     <div className="relative flex flex-col p-5 space-y-5 rounded-xl card-shadow product-card">

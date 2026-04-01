@@ -8,6 +8,7 @@ import SimplePricing from './Components/SimplePricing/SimplePricing'
 import StartedSteps from './Components/StartedSteps/StartedSteps'
 import Stat from './Components/Stat/Stat'
 import Supercharge from './Components/Supercharge/Supercharge'
+import { ToastContainer } from 'react-toastify'
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <StartedSteps></StartedSteps>
       <SimplePricing></SimplePricing>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   )
 }
