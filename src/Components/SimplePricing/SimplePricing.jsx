@@ -51,7 +51,7 @@ const SimplePricing = () => {
     },
   ];
   return (
-    <div className="my-10 w-[95%] md:w-[80%] mx-auto">
+    <div id="pricing" className="my-10 w-[95%] md:w-[80%] mx-auto">
       <div className="py-10 flex flex-col justify-center items-center gap-3 text-center">
         <h2 className="text-3xl md:text-5xl font-black">
           Simple, Transparent Pricing

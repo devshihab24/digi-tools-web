@@ -2,8 +2,8 @@
   background: linear-gradient(
     45deg,
     rgba(145, 0, 248, 1),
-    rgba(251, 9, 180, 1),
-    rgba(145, 0, 248, 1)
+    #fb09b4,
+    rgb(145, 0, 248)
   );
   background-size: 300%;
   background-clip: text;

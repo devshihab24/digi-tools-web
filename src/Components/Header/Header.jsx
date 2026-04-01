@@ -1,10 +1,10 @@
 import { ShoppingCart } from "lucide-react";
 import "./header.css";
 
-const Header = () => {
+const Header = ({cartItem}) => {
   return (
-    <div className="w-[95%] md:w-[80%] mx-auto py-5">
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="fixed top-0 left-0 right-0 z-10">
+      <div className="navbar py-5 lg:px-20 bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,16 +29,16 @@ const Header = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-              <a>Products</a>
+              <a href="#products">Products</a>
             </li>
             <li>
-              <a>Features</a>
+              <a href="#features">Features</a>
             </li>
             <li>
-              <a>Pricing</a>
+              <a href="#pricing">Pricing</a>
             </li>
             <li>
-              <a>Testimonials</a>
+              <a href="#testimonials">Testimonials</a>
             </li>
             <li>
               <a>FAQ</a>
@@ -50,16 +50,16 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Products</a>
+              <a href="#products">Products</a>
             </li>
             <li>
-              <a>Features</a>
+              <a href="#features">Features</a>
             </li>
             <li>
-              <a>Pricing</a>
+              <a href="#pricing">Pricing</a>
             </li>
             <li>
-              <a>Testimonials</a>
+              <a href="#testimonials">Testimonials</a>
             </li>
             <li>
               <a>FAQ</a>
@@ -67,7 +67,10 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end gap-4">
-          <ShoppingCart className="hover:cursor-pointer shopping-cart"></ShoppingCart>
+          <div className=" h-10 w-10 flex justify-center items-center relative">
+            <ShoppingCart className="hover:cursor-pointer shopping-cart"></ShoppingCart>
+            <span className="border h-5 w-5 flex justify-center items-center bg-red-500 rounded-full text-white absolute -top-[10%] -right-[5%] translate-y-[10%] translate-x-[5%] text-center">{cartItem.length}</span>
+          </div>
           <a className="hidden md:block hover:cursor-pointer font-semibold">Login</a>
           <button className="common-btn">Get Started</button>
         </div>

@@ -2,7 +2,7 @@ import "./stat.css"
 
 const Stat = () => {
   return (
-    <div className="bg-linear-to-r from-[#4F39F7] to-[#700fde] py-5">
+    <div className="bg-linear-to-r from-[#4F39F7] to-[#fb09b4] py-5">
       <div className="w-[95%] md:w-[80%] mx-auto py-5 flex flex-col md:flex-row justify-center items-center text-white font-bold shadow gap-10">
         <div className="stat place-items-center ">
           <div className="stat-value">50K+</div>

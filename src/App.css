@@ -6,6 +6,7 @@ html{
   padding: 12px 20px;
   background: linear-gradient(90deg, #4f39f7, #655479);
   color: white;
+  overflow: hidden;
   border-radius: 999px;
   font-weight: 600;
   font-size: 16px;

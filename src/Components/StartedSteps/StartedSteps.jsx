@@ -25,7 +25,7 @@ const StartedSteps = () => {
     },
   ];
   return (
-    <div className="bg-gray-100">
+    <div id="features" className="bg-gray-100">
       <div className="w-[95%] md:w-[80%] mx-auto py-10 space-y-10">
         <div className=" flex flex-col justify-center items-center gap-2">
           <h2 className="text-3xl md:text-5xl font-black">
